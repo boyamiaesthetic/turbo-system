@@ -13,36 +13,36 @@ PIP_PACKAGES=(
 )
 
 CHECKPOINT_MODELS=(
-    "https://civitai.com/api/download/models/290640?type=Model&format=SafeTensor&size=pruned&fp=fp16 /workspace/stable-diffusion-webui-forge/models/Stable-diffusion/pony.safetensors"
+    "https://civitai.com/api/download/models/290640?type=Model&format=SafeTensor&size=pruned&fp=fp16&token=$CIVITAI_TOKEN"
 )
 
 UNET_MODELS=(
 )
 
 LORA_MODELS=(
-    "https://civitai.com/api/download/models/382152?type=Model&format=SafeTensor /workspace/stable-diffusion-webui-forge/models/Lora/expressive_h.safetensors"
-    "https://civitai.com/api/download/models/333607?type=Model&format=SafeTensor /workspace/stable-diffusion-webui-forge/models/Lora/smooth_anime.safetensors"
-    "https://civitai.com/api/download/models/436219?type=Model&format=SafeTensor /workspace/stable-diffusion-webui-forge/models/Lora/incase.safetensors"
-    "https://civitai.com/api/download/models/373076?type=Model&format=SafeTensor /workspace/stable-diffusion-webui-forge/models/Lora/vintage.safetensors"
-    "https://civitai.com/api/download/models/767078?type=Model&format=SafeTensor /workspace/stable-diffusion-webui-forge/models/Lora/pov_instant_loss.safetensors"
-    "https://civitai.com/api/download/models/406664?type=Model&format=SafeTensor /workspace/stable-diffusion-webui-forge/models/Lora/instant_loss_2koma.safetensors"
-    "https://civitai.com/api/download/models/1122823?type=Model&format=SafeTensor /workspace/stable-diffusion-webui-forge/models/Lora/morimee_style.safetensors"
-    "https://civitai.com/api/download/models/381063?type=Model&format=SafeTensor /workspace/stable-diffusion-webui-forge/models/Lora/asura_style.safetensors"
-    "https://civitai.com/api/download/models/359222?type=Model&format=SafeTensor /workspace/stable-diffusion-webui-forge/models/Lora/thick_penis.safetensors"
-    "https://civitai.com/api/download/models/1029540?type=Model&format=SafeTensor /workspace/stable-diffusion-webui-forge/models/Lora/gothic_neon.safetensors"
-    "https://civitai.com/api/download/models/433657?type=Model&format=SafeTensor /workspace/stable-diffusion-webui-forge/models/Lora/gravs_transformation.safetensors"
-    "https://civitai.com/api/download/models/517898?type=Model&format=SafeTensor /workspace/stable-diffusion-webui-forge/models/Lora/penis_size_slider.safetensors"
-    "https://civitai.com/api/download/models/796189?type=Model&format=SafeTensor /workspace/stable-diffusion-webui-forge/models/Lora/palm_sized_girl.safetensors"
-    "https://civitai.com/api/download/models/287973?type=Model&format=SafeTensor /workspace/stable-diffusion-webui-forge/embeddings/SimpleNegativeV3.safetensors"
-    "https://files.catbox.moe/kbaz4k.safetensors /workspace/stable-diffusion-webui-forge/models/Lora/trogfor_toon.safetensors"
-    "https://files.catbox.moe/ojbvr4.safetensors /workspace/stable-diffusion-webui-forge/models/Lora/afrobull_toon.safetensors"
-    "https://files.catbox.moe/y5xajf.safetensors /workspace/stable-diffusion-webui-forge/models/Lora/asashina_toon.safetensors"
-    "https://files.catbox.moe/odmswn.safetensors /workspace/stable-diffusion-webui-forge/models/Lora/fkey_hd.safetensors"
-    "https://files.catbox.moe/ma4ly2.safetensors /workspace/stable-diffusion-webui-forge/models/Lora/monstrousfrog_toon.safetensors"
+    "https://civitai.com/api/download/models/382152?type=Model&format=SafeTensor&token=$CIVITAI_TOKEN"
+    "https://civitai.com/api/download/models/333607?type=Model&format=SafeTensor&token=$CIVITAI_TOKEN"
+    "https://civitai.com/api/download/models/436219?type=Model&format=SafeTensor&token=$CIVITAI_TOKEN"
+    "https://civitai.com/api/download/models/373076?type=Model&format=SafeTensor&token=$CIVITAI_TOKEN"
+    "https://civitai.com/api/download/models/767078?type=Model&format=SafeTensor&token=$CIVITAI_TOKEN"
+    "https://civitai.com/api/download/models/406664?type=Model&format=SafeTensor&token=$CIVITAI_TOKEN"
+    "https://civitai.com/api/download/models/1122823?type=Model&format=SafeTensor&token=$CIVITAI_TOKEN"
+    "https://civitai.com/api/download/models/381063?type=Model&format=SafeTensor&token=$CIVITAI_TOKEN"
+    "https://civitai.com/api/download/models/359222?type=Model&format=SafeTensor&token=$CIVITAI_TOKEN"
+    "https://civitai.com/api/download/models/1029540?type=Model&format=SafeTensor&token=$CIVITAI_TOKEN"
+    "https://civitai.com/api/download/models/433657?type=Model&format=SafeTensor&token=$CIVITAI_TOKEN"
+    "https://civitai.com/api/download/models/517898?type=Model&format=SafeTensor&token=$CIVITAI_TOKEN"
+    "https://civitai.com/api/download/models/796189?type=Model&format=SafeTensor&token=$CIVITAI_TOKEN"
+    "https://civitai.com/api/download/models/287973?type=Model&format=SafeTensor&token=$CIVITAI_TOKEN"
+    "https://files.catbox.moe/kbaz4k.safetensors"
+    "https://files.catbox.moe/ojbvr4.safetensors"
+    "https://files.catbox.moe/y5xajf.safetensors"
+    "https://files.catbox.moe/odmswn.safetensors"
+    "https://files.catbox.moe/ma4ly2.safetensors"
 )
 
 VAE_MODELS=(
-    "https://civitai.com/api/download/models/290640?type=VAE&format=SafeTensor /workspace/stable-diffusion-webui-forge/models/VAE/pony.safetensors"
+    "https://civitai.com/api/download/models/290640?type=VAE&format=SafeTensor&token=$CIVITAI_TOKEN"
 )
 
 ESRGAN_MODELS=(
